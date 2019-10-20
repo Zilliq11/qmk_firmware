@@ -57,6 +57,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define RGBLIGHT_SAT_STEP 25
 #define RGBLIGHT_VAL_STEP 12
 
+#define UNUSED_PINS
+
 //#define RGBLED_NUM 1  // Number of LEDs
 
 /* COL2ROW or ROW2COL */
