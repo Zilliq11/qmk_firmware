@@ -15,9 +15,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      * |   1   |   2   |   3   |
      * `-----------------------'
      */
-    [0] = LAYOUT(LSFT(KC_4), LSFT(KC_5), LSFT(KC_6)),
+    [0] = LAYOUT(RGB_MODE_RAINBOW, RGB_TOG, RGB_MODE_XMAS),
 };
 
-void matrix_init_user(void) {
-    setrgb(RGB_WHITE);
+void matrix_init_user(void){
+    //rgblight_sethsv_at(0xFF, 0x00, 0x00, 0);
+    rgblight_set_blue;
+    // rgblight_sethsv(0xFF, 0xFF, 0xEE);
 }

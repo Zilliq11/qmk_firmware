@@ -40,8 +40,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define C6_AUDIO
 
-#define UNUSED_PINS
-
 #ifdef AUDIO_ENABLE
 #    define STARTUP_SONG SONG(ZELDA_PUZZLE)
 #endif
@@ -49,7 +47,15 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /* ws2812 RGB LED */
 #define RGB_DI_PIN F7
 // The number of LEDs connected
-#define DRIVER_LED_TOTAL 3
+#define RGBLED_NUM 10
+
+#define RGBLIGHT_LIMIT_VAL 50
+
+#define RGBLIGHT_ANIMATIONS
+
+#define RGBLIGHT_HUE_STEP 12
+#define RGBLIGHT_SAT_STEP 25
+#define RGBLIGHT_VAL_STEP 12
 
 //#define RGBLED_NUM 1  // Number of LEDs
 
